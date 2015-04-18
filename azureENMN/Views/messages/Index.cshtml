@@ -1,0 +1,69 @@
+﻿@model IEnumerable<azureENMN.Models.message>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @*@Html.ActionLink("Create New", "Create", "Messages", new { @ThreadID = @Request.QueryString["ThreadID"] }, null)*@
+    @*@Html.ActionLink("Create New", "Create", "Messages", new { @ThreadID = item.MessageThreadID }, null)*@
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.DateTime)*@
+            Time
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.OrderNo)
+            </th>*@
+        <th>
+            @*@Html.DisplayNameFor(model => model.Person.FirstName)*@
+            Sent By
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Text)*@
+            Message
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.MessageThread.MessageThreadID)
+            </th>*@
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTime)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.OrderNo)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Person.FirstName)
+                @Html.DisplayFor(modelItem => item.Person.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Text)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.MessageThread.MessageThreadID)
+                </td>*@
+            @*<td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.MessageID }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.MessageID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.MessageID })
+                </td>*@
+        </tr>
+    }
+
+</table>
+<div>
+    @{Html.RenderAction("Create", "Messages");}
+</div>
+<div>
+    @Html.ActionLink("Back to Message Threads", "Index", "MessageThreads")
+</div>

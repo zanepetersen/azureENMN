@@ -1,0 +1,58 @@
+﻿@model azureENMN.Models.message
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>message</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Text)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Text)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.person.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.person.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.messagethread.MessageThreadID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.messagethread.MessageThreadID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MessageID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

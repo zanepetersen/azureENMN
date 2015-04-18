@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="818161f6259e4a028134ce908fd48238" Name="Diagram1">
+        <EntityTypeShape EntityType="enmndbModel.forumpost" Width="1.5" PointX="5.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="enmndbModel.forumthread" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="enmndbModel.group" Width="1.5" PointX="3.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="enmndbModel.groupmember" Width="1.5" PointX="3" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="enmndbModel.message" Width="1.5" PointX="5.25" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="enmndbModel.messagethread" Width="1.5" PointX="3" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="enmndbModel.mother" Width="1.5" PointX="3" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="enmndbModel.person" Width="1.5" PointX="0.75" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="enmndbModel.picture" Width="1.5" PointX="8.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="enmndbModel.session" Width="1.5" PointX="3" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="enmndbModel.textblast" Width="1.5" PointX="6" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="enmndbModel.textfield" Width="1.5" PointX="8.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="enmndbModel.textfieldresponse" Width="1.5" PointX="10.5" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="enmndbModel.textview" Width="1.5" PointX="8.25" PointY="13.875" IsExpanded="true" />
+        <AssociationConnector Association="enmndbModel.ParentForumThread" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.Poster" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.ThreadCreator" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.PartOfGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.SentToGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.PersonInGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.MessageSender" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.ParentMessageThread" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.Mother1" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.Nurse" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.MotherID" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.Creator" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.Person1" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.Responder" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.PictureOwner" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.TextFieldOwner" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.TextViewOwner" ManuallyRouted="false" />
+        <AssociationConnector Association="enmndbModel.ParentTextField" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

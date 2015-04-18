@@ -1,0 +1,50 @@
+﻿@model azureENMN.Models.textblast
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>textblast</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateSent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateSent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.group.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.group.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.person.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.person.FirstName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TextBlastID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
